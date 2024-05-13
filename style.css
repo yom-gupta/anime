@@ -1,0 +1,247 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: all 1s;
+        }
+        body{
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            z-index: 3;
+            align-items: center;
+            padding: 5px 20px;
+            background: transparent;
+            box-shadow: 0px 1px 10px white;
+        }
+
+        .navbar p {
+            color: white;
+            font-size: 24px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: red;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-main {
+            position: absolute;
+            bottom: 150px;
+            left: 20px;
+            padding: 10px 20px;
+            
+            
+        }
+
+        .video-main h1 {
+            /* font-size: 24px; */
+            margin-bottom: 20px;
+            text-decoration: underline;
+
+        }
+
+        .video-main p {
+            font-size: 16px;
+            max-width: 70%;
+        }
+        .btn{
+            border: none;
+            background: yellow;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 100px;
+            transition: all 1s;
+            font-weight: 400;
+        }
+        .btn:hover{
+            background: transparent;
+            color: white;
+        }
+        section{
+            margin: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        section  h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        section  p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /* Style for Trending Anime list */
+        .trending-anime {
+            list-style-type: none;
+        }
+        .trending-anime li {
+            margin-bottom: 10px;
+        }
+        /* Container styles */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Trending block header styles */
+.block_area-header {
+    margin-bottom: 20px;
+}
+
+.cat-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Adjust color as needed */
+}
+
+/* Trending list styles */
+.trending-list {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+/* Film item styles */
+.item {
+    position: relative;
+    text-align: center;
+    border: 1px solid #ddd; /* Adjust border color as needed */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Adjust background color as needed */
+    padding: 10px;
+}
+
+.film-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; /* Adjust color as needed */
+}
+
+.film-poster-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Trending navigation styles */
+.trending-navi {
+    position: relative;
+    margin-top: 20px;
+}
+
+.navi-next,
+.navi-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.navi-next:hover,
+.navi-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.number{
+    color:#000;
+}
+.about{
+    gap: 20px;
+    display: flex;
+}
+
+
+footer a{
+    color: #fff;
+    text-align: center;
+    text-decoration: unset;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+}
+.icons{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 50px;
+   margin: 50px 0; 
+}
+.rights{
+    margin: 50px;
+}
+
+a:hover{
+    color: red;
+}
+@media only screen and (max-width: 780px){
+    .about{
+        flex-direction: column;    
+    }
+    .video-main{
+        /* position: relative;  
+         */
+         bottom: 0;
+     
+    }
+    .link{
+        display: none;
+    }
+    .icons{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
