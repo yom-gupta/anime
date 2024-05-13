@@ -11,9 +11,9 @@ const videoAni = document.getElementById("videoani")
 // }
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
-    videoAni.src = "Phone.mp4";
+    videoAni.src = "phone.mp4";
 } else {
-    videoAni.src = "Pc.mp4";
+    videoAni.src = "pc.mp4";
 }
 
 function clickz(){
